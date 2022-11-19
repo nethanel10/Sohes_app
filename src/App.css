@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  gap: 3rem;
+  height: 3rem;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: rgba(0, 0, 255, 0.413);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar__link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar__link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.shoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  justify-content: center;
+  width: 500px;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  padding: 3rem;
+}
+.shoe {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: red;
+  border:  1px solid black;
+}
+
+.shoeDetails {
+  transform: translateX(-50%);
+  margin-left: 50%;
+}
+
+.shoeDetails__content {
   display: flex;
   flex-direction: column;
+  width: 30%;
+  gap: 1rem;
+}
+
+.shoeDetails__actions {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  padding: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  width: 10%;
+  height: 10%;
 }
