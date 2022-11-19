@@ -11,19 +11,20 @@ const Shoe = () => {
         content: ""
     })
     
-    const fetchData = async () => {
-        try {
-            let res = await axios.get(`https://6374a45108104a9c5f84c771.mockapi.io/sohoesstore/${id || 1}`)
-            setShoeData(res.data)
-        }
-        catch(err) {
-            throw err
-        }
-    }
 
     useEffect(() => {
-        fetchData()
-    }, [])
+        const fetchData = async () => {
+            try {
+                let res = await axios.get(`https://6374a45108104a9c5f84c771.mockapi.io/sohoesstore/${id || 1}`)
+                setShoeData(res.data)
+            }
+            catch(err) {
+                throw err
+            }
+        }
+fetchData()    
+        
+    }, [id])
     
     const deleteShoe = async () => {
         try {
