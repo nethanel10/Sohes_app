@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: lightblue;
+}
 
 .navbar {
   display: flex;
@@ -25,19 +28,23 @@
 }
 
 .shoes {
+  background-color: lightgreen;
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
   justify-content: center;
-  width: 500px;
+  min-width: 300px;
+  max-width: 500px;
   transform: translateX(-50%);
   margin-left: 50%;
   padding: 3rem;
+  
 }
 .shoe {
+  
   text-decoration: none;
   font-size: 1.3rem;
-  color: red;
+  color: blue;
   border:  1px solid black;
 }
 
@@ -61,6 +68,6 @@
   padding: 1rem;
 }
 img{
-  width: 10%;
-  height: 10%;
+  width: 30%;
+  height: 40%;
 }

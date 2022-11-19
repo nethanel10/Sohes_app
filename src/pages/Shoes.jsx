@@ -20,7 +20,7 @@ const Shoes = () => {
 
     if(shoes) return (
         <div className='shoes'>
-            {shoes.map(shoe => <Link to={`/shoes/${shoe.id}`} className="shoe">{shoe.name} </Link>)}
+            {shoes.map(shoe => <Link to={`/shoes/${shoe.id}`} className="shoe"><h3>{shoe.name}</h3> <h3>{shoe.price}</h3> <img src={shoe.img} alt="" /> </Link>)}
         </div>
     )
     return (
